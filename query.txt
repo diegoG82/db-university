@@ -14,7 +14,7 @@ SELECT *
 FROM `students`
 WHERE DATEDIFF(CURDATE(), `date_of_birth`) >= 30*365.25;
 
-in totale sono : 3549 studenti
+in totale sono : 3549 studenti sopra i 30 anni
 
 
 4. Selezionare tutti i corsi del primo semestre del primo anno di un qualsiasi corso di
@@ -51,4 +51,4 @@ FROM `departments`;
 
 SELECT COUNT(`name`) AS "Insegnanti senza telefono"
 FROM `teachers`
-WHERE `phone` is NULL
+WHERE `phone` is NULL;
